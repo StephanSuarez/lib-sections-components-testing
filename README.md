@@ -1,54 +1,79 @@
-# React + TypeScript + Vite
+# React Web Section Components
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A collection of reusable React components for building modern web sections, featuring smooth animations, responsive designs, and customizable styles.
 
-Currently, two official plugins are available:
+## Available Sections
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Image Gallery Sections
+- **Classic Gallery**: Traditional horizontal layout with slide animations
+- **Modern Gallery**: Contemporary vertical layout with zoom effects
 
-## Expanding the ESLint configuration
+More sections coming soon:
+- Hero Sections
+- Feature Sections
+- Testimonial Sections
+- Contact Sections
+- Pricing Sections
+- FAQ Sections
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Installation
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```bash
+npm install @your-org/web-sections
+# or
+yarn add @your-org/web-sections
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Quick Start
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```tsx
+import { ImageGalleryClassic, ImageGalleryModern } from '@your-org/web-sections';
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+// Example: Image Gallery Section
+<ImageGalleryModern
+  images={['url1.jpg', 'url2.jpg', 'url3.jpg']}
+  title="Our Portfolio"
+  description="Explore our latest work"
+  style="blue"
+/>
 ```
+
+## Documentation
+
+Each section component has its own documentation with detailed examples and customization options. You can find them in the following locations:
+
+- `/docs/sections/image-gallery.md` - Image Gallery sections documentation
+- `/docs/sections/hero.md` - Hero sections documentation (coming soon)
+- `/docs/sections/features.md` - Feature sections documentation (coming soon)
+- And more...
+
+## Common Features
+
+All section components share these features:
+- Responsive design
+- Customizable themes
+- Smooth animations
+- TypeScript support
+- CSS Modules for styling
+- Accessibility support
+
+## Development
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+```
+
+## Contributing
+
+We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
+
+## License
+
+MIT © [Your Organization]
