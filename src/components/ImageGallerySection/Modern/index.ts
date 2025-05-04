@@ -1,0 +1,1 @@
+export { ImageGalleryModern } from './ImageGalleryModern'; 
