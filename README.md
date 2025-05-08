@@ -19,9 +19,9 @@ More sections coming soon:
 ## Installation
 
 ```bash
-npm install @your-org/web-sections
+npm install @stph4211/test-component-library
 # or
-yarn add @your-org/web-sections
+yarn add @stph4211/test-component-library
 ```
 
 ## Quick Start

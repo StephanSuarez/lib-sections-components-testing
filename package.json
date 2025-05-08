@@ -1,5 +1,5 @@
 {
-  "name": "@stephan/test-component-library",
+  "name": "@stph4211/test-component-library",
   "version": "1.0.0",
   "description": "Reusable components for building web page sections",
   "main": "dist/test-component-library.cjs.js",
